@@ -32,7 +32,7 @@ describe('Test for sqs-payload-logger', () => {
 
         // Verify that console.log has been called with the expected payload
         payload.Records.forEach((record, i) => {
-            expect(console.log).toHaveBeenNthCalledWith(i + 1, JSON.stringify(record));
+            expect(console.log).toHaveBeenNthCalledWith(i + 1, 'Hello from SQS!');
         });
     });
 });

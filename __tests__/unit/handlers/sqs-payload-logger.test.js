@@ -1,11 +1,9 @@
-// Import all functions from sqs-payload-logger.js
 const sqsPayloadLogger = require('../../../src/handlers/sqs-payload-logger.js');
 
 describe('Test for sqs-payload-logger', () => {
-    // This test invokes the sqs-payload-logger Lambda function and verifies that the received payload is logged
+    
     it('Verifies the payload is logged', async () => {
-        // Mock console.log statements so we can verify them. For more information, see
-        // https://jestjs.io/docs/en/mock-functions.html
+        // Mock console.log statements so we can verify them        
         console.log = jest.fn();
 
         // Create a sample payload with SQS message format

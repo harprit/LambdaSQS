@@ -1,4 +1,5 @@
-# Process SQS Queue with Lambda (using AWS SAM & CodePipeline)
+# Process SQS Queue with Lambda 
+## Using AWS SAM & CodePipeline
 
 Dev workflow is simply to make code changes, npm run test and commit code to the repo.
 
